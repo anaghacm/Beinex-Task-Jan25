@@ -55,17 +55,9 @@ body {
   color: #FFF;
   width: 65%;
   margin: auto;
-  font-size: 20px;
-  position: relative; }
+  font-size: 20px; }
   .signup-module .form-div .form-input small {
-    color: red; }
-  .signup-module .form-div .form-input #togglePassword,
-  .signup-module .form-div .form-input #toggleconfirmPassword {
-    position: absolute;
-    right: 8%;
-    top: 60%;
-    color: black;
-    font-size: 16px; }
+    color: #ee8080; }
 .signup-module .form-div .password-rules {
   display: flex;
   justify-content: flex-end;
@@ -74,8 +66,7 @@ body {
   font-size: 16px; }
 .signup-module .form-div .data-input {
   padding-left: 10px;
-  color: #0f1d3a;
-  width: 100%; }
+  color: #0f1d3a; }
   .signup-module .form-div .data-input::placeholder {
     font-size: 16px; }
   .signup-module .form-div .data-input:focus {

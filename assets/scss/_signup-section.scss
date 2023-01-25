@@ -1,63 +1,87 @@
-.signup-module{
-    .signup{
+.signup-module {
+    .signup {
         margin-top: $spacer-2;
         background-color: #0004;
         backdrop-filter: blur(8px);
         border-radius: 30px;
         padding: $spacer-3;
     }
-    .heading{
+
+    .heading {
         color: $color-white;
         text-align: center;
-        .logo{
+
+        .logo {
             font-size: $font-logo;
             color: $color-contrasting;
         }
-        .logo-icon{
+
+        .logo-icon {
             transition: all 0.5s;
-            &:hover{
+
+            &:hover {
                 animation: rotateicon 1s ease-in-out;
             }
         }
-        .top-head{
+
+        .top-head {
             font-weight: 700;
         }
     }
 
-    .errorInput{
+    .errorInput {
         border: 1px solid red;
     }
-    .form-div{
-        .form-input{
+
+    .form-div {
+        .form-input {
             padding: $spacer-1;
             height: 85px;
             color: $color-white;
             width: 65%;
             margin: auto;
             font-size: $font-lg;
-            small{
+            position: relative;
+
+            small {
                 color: red;
             }
+            #togglePassword,
+            #toggleconfirmPassword {
+                position: absolute;
+                right:8%;
+                top: 60%;
+                color: black;
+                font-size: $font-md;
+            }
         }
-        .password-rules{
+
+        .password-rules {
             display: flex;
             justify-content: flex-end;
             text-decoration: none;
             color: $color-contrasting;
-            font-size:$font-md;
+            font-size: $font-md;
         }
 
-        .data-input{
+        .data-input {
             padding-left: $spacer-1;
             color: $color-primary;
-            &::placeholder{
+            width: 100%;
+
+            &::placeholder {
                 font-size: $font-md;
             }
-            &:focus{
+
+            &:focus {
                 outline: none;
             }
+          
         }
-        .subscribe-btn{
+
+       
+
+        .subscribe-btn {
             color: $color-contrasting;
             font-size: $font-lg;
             padding: $spacer-md $spacer-2;
@@ -66,10 +90,12 @@
             position: relative;
             transition: all 0.8s;
             font-weight: 700;
-            &:focus{
+
+            &:focus {
                 border: none;
             }
-            &::after{
+
+            &::after {
                 content: '\f105';
                 font-family: FontAwesome;
                 padding-top: $spacer-md;
@@ -81,12 +107,14 @@
                 position: absolute;
                 left: -35px;
                 top: 0;
-               transition: all 0.8s;
+                transition: all 0.8s;
             }
-            &:hover{
+
+            &:hover {
                 color: $color-white;
             }
-            &:hover::after{
+
+            &:hover::after {
                 width: 165px;
                 z-index: -1;
                 content: '\f061';
@@ -95,21 +123,23 @@
             }
         }
     }
-   
+
 }
-@include tablet{
-    .signup-module{
-        .form-div{
-            .form-input{
+
+@include tablet {
+    .signup-module {
+        .form-div {
+            .form-input {
                 width: 80%;
             }
         }
     }
 }
-@include mobile{
-    .signup-module{
-        .form-div{
-            .form-input{
+
+@include mobile {
+    .signup-module {
+        .form-div {
+            .form-input {
                 width: 100%;
             }
         }

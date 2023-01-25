@@ -107,3 +107,24 @@ form.addEventListener('submit', function (event) {
         form.reset();
     }
 });
+
+
+//Toggle Password
+const togglePassword = document.getElementById('togglePassword');
+const password = document.getElementById('password');
+
+togglePassword.addEventListener('click', function () {
+    const type = password.getAttribute("type") === "password" ? "text" : "password";
+    password.setAttribute("type", type);
+    this.classList.toggle("fa-eye");
+})
+
+//Toggle Confirm Password
+const toggleconfirmPassword = document.getElementById('toggleconfirmPassword');
+const confirmpassword = document.getElementById('confirmpassword');
+
+toggleconfirmPassword.addEventListener('click', function () {
+    const type = confirmpassword.getAttribute("type") === "password" ? "text" : "password";
+    confirmpassword.setAttribute("type", type);
+    this.classList.toggle("fa-eye");
+})
