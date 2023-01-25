@@ -1,0 +1,117 @@
+.signup-module{
+    .signup{
+        margin-top: $spacer-2;
+        background-color: #0004;
+        backdrop-filter: blur(8px);
+        border-radius: 30px;
+        padding: $spacer-3;
+    }
+    .heading{
+        color: $color-white;
+        text-align: center;
+        .logo{
+            font-size: $font-logo;
+            color: $color-contrasting;
+        }
+        .logo-icon{
+            transition: all 0.5s;
+            &:hover{
+                animation: rotateicon 1s ease-in-out;
+            }
+        }
+        .top-head{
+            font-weight: 700;
+        }
+    }
+
+    .errorInput{
+        border: 1px solid red;
+    }
+    .form-div{
+        .form-input{
+            padding: $spacer-1;
+            height: 85px;
+            color: $color-white;
+            width: 65%;
+            margin: auto;
+            font-size: $font-lg;
+            small{
+                color: red;
+            }
+        }
+        .password-rules{
+            display: flex;
+            justify-content: flex-end;
+            text-decoration: none;
+            color: $color-contrasting;
+            font-size:$font-md;
+        }
+
+        .data-input{
+            padding-left: $spacer-1;
+            color: $color-primary;
+            &::placeholder{
+                font-size: $font-md;
+            }
+            &:focus{
+                outline: none;
+            }
+        }
+        .subscribe-btn{
+            color: $color-contrasting;
+            font-size: $font-lg;
+            padding: $spacer-md $spacer-2;
+            margin-top: $spacer-2;
+            border-radius: 0;
+            position: relative;
+            transition: all 0.8s;
+            font-weight: 700;
+            &:focus{
+                border: none;
+            }
+            &::after{
+                content: '\f105';
+                font-family: FontAwesome;
+                padding-top: $spacer-md;
+                width: 40px;
+                height: 40px;
+                border-radius: 25px;
+                background-color: $color-contrasting;
+                color: $color-white;
+                position: absolute;
+                left: -35px;
+                top: 0;
+               transition: all 0.8s;
+            }
+            &:hover{
+                color: $color-white;
+            }
+            &:hover::after{
+                width: 165px;
+                z-index: -1;
+                content: '\f061';
+                text-align: left;
+                padding-left: $spacer-2;
+            }
+        }
+    }
+   
+}
+@include tablet{
+    .signup-module{
+        .form-div{
+            .form-input{
+                width: 80%;
+            }
+        }
+    }
+}
+@include mobile{
+    .signup-module{
+        .form-div{
+            .form-input{
+                width: 100%;
+            }
+        }
+    }
+}

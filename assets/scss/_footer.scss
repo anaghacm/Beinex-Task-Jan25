@@ -1,0 +1,16 @@
+.footer-module {
+    .email-add {
+        text-align: right;
+        color: $color-white;
+        padding: 0;
+        margin: -20px;
+    }
+}
+@include tablet{
+    .footer-module{
+        .email-add{
+            margin: 0;
+            text-align: center;
+        }
+    }
+}

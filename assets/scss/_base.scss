@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    font-family: 'GFS Neohellenic', sans-serif;
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body{
+    background-image:url('../images/signup.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+@keyframes rotateicon {
+    0% {
+        rotate: Y 60deg;
+    }
+
+    20% {
+        rotate: Y -60deg;
+    }
+
+    40% {
+        rotate: Y 30deg;
+    }
+
+    60% {
+        rotate: Y -30deg;
+    }
+
+    80% {
+        rotate: Y 15deg;
+    }
+
+    90% {
+        rotate: Y -15deg;
+    }
+
+    100% {
+        rotate: Y 0deg;
+    }
+}
