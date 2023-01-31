@@ -48,12 +48,12 @@ function passwordCheck(input, reqmessage, invalidmessage) {
 
 //Password confirmation
 function confirmPassword(input, reqmessage, mismatchmessage) {
-    const matchinput = document.getElementById('password').value.trim();
+    const matchinput = document.getElementById('password').value;
     const required = requiredField(input, reqmessage);
     if (!required) {
         return false;
     }
-    if (matchinput === input.value.trim()) {
+    if (matchinput === input.value) {
         return setWarning(input, '', true);
     }
     else {
